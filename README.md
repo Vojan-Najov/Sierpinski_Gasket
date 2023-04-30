@@ -6,6 +6,8 @@ Displaying the Serpinsky gasket using OpenGL. Fixed-function pipeline.
 
 ### Iterative algorithm
 - `$>make sierpinski_gasket_2d_cycle` \
+  `$>./sierpinski_gasket_2d_cycle 500000` \
+  Number of points is 500000. \
   <img  src="./misc/sierpinski_gasket_2D_01.png" alt="gasket_01" width="700"/>
 
 ### Recursive algorithm
