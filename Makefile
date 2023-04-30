@@ -1,4 +1,4 @@
-NAME = sierpinski_gasket_2D
+NAME1 = sierpinski_gasket_2D_cycle
 
 CC = gcc
 RM = rm -f
@@ -9,11 +9,11 @@ CFLAGS_GLUT = $(shell $(PKG-CONFIG) --cflags glut)
 LIBS_GLUT = $(shell $(PKG-CONFIG) --libs glut)
 LIBS = -lGL
 
-$(NAME) : sierpinski_gasket_2d.c
+$(NAME1) : sierpinski_gasket_2d_cycle.c
 	echo $(CFLAGS_GLUT)
 	echo $(LIBS_GLUT)
 	$(CC) $(CFLAGS) $(CFLAGS_GLUT) $? -o $@ $(LIBS) $(LIBS_GLUT)
 
 clean:
 	$(RM) *.o
-	$(RM) $(NAME)
+	$(RM) $(NAME1)
