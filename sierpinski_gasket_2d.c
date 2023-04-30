@@ -47,7 +47,7 @@ static void display(void)
 
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	for (k = 0; k < 5000000; ++k)
+	for (k = 0; k < 500000; ++k)
 	{
 		i = rand() % 3;
 		p[0] = (p[0] + vertices[i][0]) / 2.0;
