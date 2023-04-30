@@ -1,11 +1,26 @@
 #include <GL/glut.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 static void myInit(void);
 static void display(void);
 
+static int n;
+
 int main(int argc, char **argv)
 {
+	if (argc == 1) {
+		printf("An integer argument of points is expected.\n");
+		return (0);
+	}
+	
+	n = atoi(argv[1]);
+
+	if (n <= 0) {
+		printf("Error. A positive integer argument is expected.\n");
+		return (1);
+	}
+
 	glutInit(&argc, argv);
 
 	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
@@ -47,7 +62,7 @@ static void display(void)
 
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	for (k = 0; k < 500000; ++k)
+	for (k = 0; k < n; ++k)
 	{
 		i = rand() % 3;
 		p[0] = (p[0] + vertices[i][0]) / 2.0;
