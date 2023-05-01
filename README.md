@@ -24,6 +24,7 @@ Displaying the Serpinsky gasket using OpenGL. Fixed-function pipeline.
   `$>./sierpinski_gasket_3d 3` \
   Recursion depth is 3. \
   <img  src="./misc/sierpinski_gasket_3d_01.png" alt="gasket_04" width="700"/> \
+  `$>./sierpinski_gasket_3d 4` \
   Recursion depth is 4. \
   <img  src="./misc/sierpinski_gasket_3d_03.png" alt="gasket_06" width="700"/> \
   `$>./sierpinski_gasket_3d 6` \
